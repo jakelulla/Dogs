@@ -4,75 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jake's Personal Website</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 20px;
-            background-color: #f0f0f0;
-        }
-
-        h1, h2, h3, h4, h5, h6 {
-            color: #333;
-            text-align: center;
-        }
-
-        #c1 {
-            background-color: #fff;
-            padding: 10px;
-            margin: 20px;
-            border: 1px solid #ccc;
-            text-align: center;
-        }
-
-        button {
-            display: block;
-            margin: 10px auto;
-            padding: 10px;
-            background-color: #4caf50;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #45a049;
-        }
-    </style>
+    <link rel = "stylesheet" href ="styles.css"
 </head>
 <body>
     <h1>LOOKING FOR A NEW DOG?</h1>
-    <p><b>LATIN LESSON # 1: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-        Inventore eius nihil voluptatem atque ea odit obcaecati qui et non sit praesentium dignissimos, animi illum minima alias quis sint ad pariatur nam labore consectetur cupiditate repudiandae! <br>
-        Optio ea obcaecati tempore deleniti est veritatis? <br>
-        Quod harum maxime laborum aspernatur et similique rem dolores porro laboriosam nam voluptates error debitis consequatur quia cupiditate quibusdam accusamus, amet eveniet! <br>
-        Aut, ipsum, ad aliquid quod fugit voluptate nostrum quisquam magnam ea deserunt velit veniam assumenda autem fugiat consectetur asperiores id nisi provident enim perferendis cumque aliquam, corrupti temporibus. Deleniti eos, fugiat earum sint sequi magnam ullam.</p>
-        <i>THANK YOU SOOO MUCH FOR LISETINING</i>
-    <div id="c1"></div>
+    <p><b>OUR MISSION: </b>Our mission is simple. Find dogs homes.<br>
+        Every dog deserves a home. We do a great job taking care of our puppies, but we cannot replicate the loving environment of a home for each of our dogs.</p>
+        <div class = "intro"> <i>WITHOUT FURTHER ADIEU... OUR DOGS</i><br></div>
+    <div class="image-container">
+        <img src="puppy.jpg" alt="">
+        <div class="image-description"><b><i>MARC<br>LOVES TO SWIM<br>EATS HOTDOGS AND CHEESEBURGERS</i></b></div>
+    </div>
 
-    <button onclick="myFunction()">
-        CLICK THIS TO PRINT HELLO WORLD
-    </button>
+    <div class="image-container">
+        <img src="puppy2.jpg" alt="">
+        <div class="image-description"><b><i>STUART<br>GETS ALONG WITH CATS<br>LOVES TO HIKE</i></b></div>
+    </div>
 
-    <button onclick="myOther()">
-        CLICK THIS TO REMOVE ONE
-    </button>
-
-    <script>
-        function myFunction() {
-            var c1 = document.getElementById("c1");
-            c1.innerHTML += "Hello World ";
-        }
-
-        function myOther() {
-            var c1 = document.getElementById("c1");
-            var text = c1.innerHTML;
-            
-            if (text.endsWith("Hello World ")) {
-                c1.innerHTML = text.slice(0, -12);
-            }
-        }
-    </script>
-
-    <img src = "puppy.jpg"> <br><alt><b><i>PUPPY CALLED MARC<br>LOVES TO SWIM<br>EATS HOTDOGS AND CHEESBURGERS</i></b></alt>
+    <div class="image-container">
+        <img src="puppy3.jpg" alt="">
+        <div class="image-description"><b><i>ROVER<br>FITS INSIDE TEACUP<br>WILL FOLLOW YOU AROUND ALL THE TIME</i></b></div>
+    </div>
 </body>
 </html>
