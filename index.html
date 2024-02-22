@@ -1,17 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-    <title>
-        Jake's Personal Website
-    </title>
-    <h1>
-        WELCOME
-    </h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jake's Personal Website</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            background-color: #f0f0f0;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: #333;
+            text-align: center;
+        }
+
+        #c1 {
+            background-color: #fff;
+            padding: 10px;
+            margin: 20px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+
+        button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>LOOKING FOR A NEW DOG?</h1>
+    <p><b>LATIN LESSON # 1: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+        Inventore eius nihil voluptatem atque ea odit obcaecati qui et non sit praesentium dignissimos, animi illum minima alias quis sint ad pariatur nam labore consectetur cupiditate repudiandae! <br>
+        Optio ea obcaecati tempore deleniti est veritatis? <br>
+        Quod harum maxime laborum aspernatur et similique rem dolores porro laboriosam nam voluptates error debitis consequatur quia cupiditate quibusdam accusamus, amet eveniet! <br>
+        Aut, ipsum, ad aliquid quod fugit voluptate nostrum quisquam magnam ea deserunt velit veniam assumenda autem fugiat consectetur asperiores id nisi provident enim perferendis cumque aliquam, corrupti temporibus. Deleniti eos, fugiat earum sint sequi magnam ullam.</p>
+        <i>THANK YOU SOOO MUCH FOR LISETINING</i>
+    <div id="c1"></div>
+
+    <button onclick="myFunction()">
+        CLICK THIS TO PRINT HELLO WORLD
+    </button>
+
+    <button onclick="myOther()">
+        CLICK THIS TO REMOVE ONE
+    </button>
+
     <script>
-        function myFunction(){
-            console.log("Hello World");
+        function myFunction() {
+            var c1 = document.getElementById("c1");
+            c1.innerHTML += "Hello World ";
+        }
+
+        function myOther() {
+            var c1 = document.getElementById("c1");
+            var text = c1.innerHTML;
+            
+            if (text.endsWith("Hello World ")) {
+                c1.innerHTML = text.slice(0, -12);
+            }
         }
     </script>
-    <button onclick = "myFunction()">
-        CLICK THIS TO PRINT HELLO WORLD 
-    </button>
+
+    <img src = "puppy.jpg"> <br><alt><b><i>PUPPY CALLED MARC<br>LOVES TO SWIM<br>EATS HOTDOGS AND CHEESBURGERS</i></b></alt>
+</body>
 </html>
