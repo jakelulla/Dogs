@@ -1,3 +1,7 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 :root {
     font-size: 10px;
 
@@ -12,7 +16,7 @@ body{
 
 #navbar {
     background-color: var(--c2);
-    width: 100%;
+    width: auto;
 
     position: sticky;
     top: 0px;
@@ -21,9 +25,17 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-}       
+}      
+
+.buttons{
+    color: red;
+}
+button{
+    color: blue !important; 
+}
+
 .icon{
     width: 45px;
     height: auto;
-    border-radius: 50%
+    margin: 0 10px 0 10px;
 }

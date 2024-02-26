@@ -11,14 +11,22 @@
         <div class = "icon-container">
             <img class = "icon" src = "puppyIcon.jpg">
         </div>
+        <h1>
+            WELCOME TO MY WEBSITE
+        </h1>
+        <script>
+            function aboutMe(){
+                window.location.href = "pages/about.html";
+            }
+        </script>
         <div class = "button-container">
-            <button class = "buttons">
+            <button class = "buttons" onclick="aboutMe()">
                 ABOUT ME
             </button>
-            <button class = "buttons">
+            <button class = "buttons" onclick = "projects()">
                 PROJECTS
             </button>
-            <button class = "buttons ">
+            <button class = "buttons" onclick = "contactMe()">
                 CONTACT ME
             </button>
         </div>
@@ -27,4 +35,5 @@
         
     </text>
 </body>
+
 </html>
