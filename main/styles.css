@@ -1,0 +1,29 @@
+:root {
+    font-size: 10px;
+
+    --c1: rgba(26, 142, 181, 0.856);   
+    --c2: rgba(243, 9, 9, 0.847);
+    --c3: rgba(24, 9, 9, 0.847);
+}
+
+body{
+    background: var(--c1);
+}
+
+#navbar {
+    background-color: var(--c2);
+    width: 100%;
+
+    position: sticky;
+    top: 0px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}       
+.icon{
+    width: 45px;
+    height: auto;
+    border-radius: 50%
+}
