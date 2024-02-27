@@ -1,5 +1,9 @@
+@font-face{
+    font-family: ArchivoBlack;
+    src: url('./font/ArchivoBlack-Regular.ttf');
+}
 * {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Halogen', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 :root {
@@ -25,17 +29,25 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 5px, 10px, 5px, 10px;
 }      
 
 .buttons{
     color: red;
 }
+
+.button-container a {
+    text-decoration: none; 
+}
+
 button{
     color: blue !important; 
 }
 
 .icon{
-    width: 45px;
+    width: 90px;
+    height: auto;
     height: auto;
     margin: 0 10px 0 10px;
+    border-radius: 10px;
 }
