@@ -1,8 +1,14 @@
+@font-face {
+    font-family: Conthrax;
+    src: url('./font/Conthrax-BLRLraCV.otf');
+}
+
 :root {
     --primary: #000;
     --secondary: #fff;
 
     color: var(--secondary);
+    font-family:'Conthrax', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 * {
@@ -40,4 +46,30 @@ body {
 
 #navbar .left-nav-container img {
     width: 50px;
+}
+
+#navbar .hamburger-button img{
+
+}
+
+.page-nav{
+
+}
+
+.arrow-button {
+    background: none;
+    border: none;
+}
+
+.arrow-button img{
+    width: 40px;
+    height: 20px;
+}
+
+.arrow-button:hover{
+    cursor: pointer;
+}
+
+.arrow-button:hover img svg{
+    background-color: aqua;
 }
