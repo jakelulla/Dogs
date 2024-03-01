@@ -1,0 +1,16 @@
+p {
+    color: blue;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+}
+
+.greendiv {
+    color: green;
+}
+
+html body div .greendiv .paragraph {
+    color: red;
+}

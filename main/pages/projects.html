@@ -3,24 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Projects</title>
+    <link rel="stylesheet" href="../style/project-style.css">
 </head>
 <body>
-    <script id="replace_with_navbar" src="nav.js"></script>
-    <ul style = "list-style-type: square;">
-        <li>
-            first
-        </li>
-        <li>
-            second
-        </li>
-        <li>
-            third
-        </li>
+    <!-- <ul style="list-style-type: square;">
+        <li>Something</li>
+        <li>Something else</li>
+        <li>Something else else</li>
     </ul>
-    <ol>
+    <ol style="list-style-type:lower-greek;">
         <li>Carrots</li>
-        <li>Peppers</li>
-    </ol>
+        <li>Cheese</li>
+        <li>Milk</li>
+    </ol> -->
+
+    <div class = "flex-row" id="navbar">
+        <div class="left-nav-container">
+            <img src="../img/dog.jpg">
+            <p>jlulla24@pascack.org  |  (201) 669-8846</p>
+        </div>
+        <div>
+            <button class = "hamburger-button"><img src = "../icons/menu.svg">
+        </div>
+    </div>
+
+    <div class = "header-container flex-row">
+        <h1>
+            PROJECTS
+        </h1>
+        <div class = "page-nav flex-row">
+            <button><img src = "../icons/arrow-left.svg"></button>
+            <p>current page / pages</p>
+            <button><img src = "../icons/arrow-right.svg"></button>
+        </div>
+    </div>
+    <div class="page-num">
+        <p>Projects</p>
+    </div>
+
+    
 </body>
 </html>

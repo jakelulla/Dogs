@@ -1,0 +1,43 @@
+:root {
+    --primary: #000;
+    --secondary: #fff;
+
+    color: var(--secondary);
+}
+
+* {
+    color: var(--secondary);
+}
+
+body {
+    background-color: var(--primary);
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.page-num {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+
+    width: 60px;
+}
+
+.page-num p {
+    margin: 5px;
+}
+
+
+
+#navbar .left-nav-container {
+    font-size: 12px;
+    width: 35%;
+}
+
+#navbar .left-nav-container img {
+    width: 50px;
+}
