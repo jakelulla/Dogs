@@ -8,7 +8,7 @@
     --secondary: #fff;
 
     color: var(--secondary);
-    font-family:'Conthrax', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family: 'Conthrax', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 * {
@@ -19,28 +19,36 @@ body {
     background-color: var(--primary);
 }
 
-.flex-row{
+/* Generic Classes */
+
+.flex-row {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
+
+/* Specific Classes */
+
 .page-num {
     position: fixed;
     bottom: 0px;
     right: 0px;
 
-    width: 60px;
+    width: 80px;
 }
 
 .page-num p {
     margin: 5px;
 }
 
+/* #navbar {
 
+} */
 
 #navbar .left-nav-container {
     font-size: 12px;
+
     width: 35%;
 }
 
@@ -48,12 +56,16 @@ body {
     width: 50px;
 }
 
-#navbar .hamburger-button img{
-
+#navbar .hamburger-button {
+    background: none;
+    border: 0;
 }
 
-.page-nav{
+#navbar .hamburger-button:hover {
+    cursor: pointer;
+}
 
+.page-nav {
 }
 
 .arrow-button {
@@ -61,15 +73,14 @@ body {
     border: none;
 }
 
-.arrow-button img{
-    width: 40px;
-    height: 20px;
-}
-
-.arrow-button:hover{
+.arrow-button:hover {
     cursor: pointer;
 }
 
-.arrow-button:hover img svg{
-    background-color: aqua;
+/* .arrow-button:hover img {
+} */
+
+.arrow-button img {
+    width: 40px;
+    height: 20px;
 }
