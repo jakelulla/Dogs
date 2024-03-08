@@ -1,6 +1,6 @@
 @font-face {
     font-family: Conthrax;
-    src: url('./font/Conthrax-BLRLraCV.otf');
+    src: url('../font/Conthrax-BLRLraCV.otf');
 }
 
 :root {
@@ -28,14 +28,51 @@ body {
     justify-content: space-between;
 }
 
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
 /* Specific Classes */
 
+#sidebar-nav {
+    position: absolute; 
+    right: 0; 
+    width: 150px;
+    height: 100%;
+    background-color: var(--tertiary);
+    z-index:  10;
+}
+
+#sidebar-nav>button{
+    margin-left: 125px;
+    margin-top: 10px;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    background: none;
+    border: none;
+}
+
+#sidebar-nav>button:hover{
+    cursor: pointer;
+}
+
+#sidebar-nav div button{
+    border: 2px solid;
+    background: none;
+}
+
+#sidebar-nav div 
 .page-num {
     position: fixed;
     bottom: 0px;
     right: 0px;
-
-    width: 80px;
+    z-index: 5;
 }
 
 .page-num p {
@@ -85,8 +122,8 @@ body {
     height: 20px;
 }
 
-.page{
-    margin: 0 50 px 0 100px;
+.page {
+    margin: 0 50px 0 100px;
 }
 
 .page .year-range {
@@ -102,6 +139,8 @@ body {
     width: 65%;
 }
 
-.hidden { 
+/* IMPORTANT CLASSES */
+
+.hidden {
     display: none;
 }
