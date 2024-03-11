@@ -1,11 +1,11 @@
 @font-face {
     font-family: Halogen;
-    src: url('./font/HalogenbyPixelSurplus-Regular.otf');
+    src: url('../font/HalogenbyPixelSurplus-Regular.otf');
 }
 
 @font-face {
     font-family: Conthrax;
-    src: url('./font/Conthrax-BLRLraCV.otf');
+    src: url('../font/Conthrax-BLRLraCV.otf');
 }
 
 * {
@@ -58,7 +58,7 @@ button {
 }
 
 .icon {
-    width: 45px;
+    width: 25 px;
     height: auto;
     margin: 0 10px 0 10px;
 }

@@ -19,19 +19,24 @@
         <li>Milk</li>
     </ol> -->
 
-    <div id = "sidebar-nav" class = "hidden">
-        <button id = "sidebar-nav-close"
-        <a href = "./about.html"><button>About Me</button></a>
-        <a href = "./projects.html"><button>My Projects</button></a>
-        <a href = "./contact.html"><button>Contact Me</button></a>
+    <div class="hidden" id="sidebar-nav">
+        <button id="sidebar-nav-close" onclick="toggleNav()"><img src="../icons/close.svg"></button>
+        <div class="flex-column">
+            <a href="./about.html"><button>About Me</button></a>
+            <a href="./projects.html"><button>My Projects</button></a>
+            <a href="./contact.html"><button>Contact Me</button></a>
+        </div>
     </div>
+
     <div class="flex-row" id="navbar">
         <div class="left-nav-container flex-row">
-            <img src="../img/do.jpg">
-            <p>jakelula@gmail.com  |  (201) 669-8846</p>
+            <a href="../index.html">
+                <img src="../img/dog.jpeg">
+            </a>
+            <p>jakelulla@gmail.com  |  (201) 669-8846</p>
         </div>
         <div>
-            <button class="hamburger-button" onclick = "openNav()"><img src="../icons/menu.svg"></button>
+            <button class="hamburger-button" onclick="toggleNav()"><img src="../icons/menu.svg"></button>
         </div>
     </div>
 
@@ -40,9 +45,15 @@
             Projects
         </h1>
         <div class="page-nav flex-row">
-            <button class="arrow-button" onclick = "prevPage()"><img src="../icons/arrow-left.svg"></button>
+            <button class="arrow-button" onclick="prevPage()">
+                <img src="../icons/arrow-left.svg">
+            </button>
+
             <p>current page / pages</p>
-            <button class="arrow-button" onclick ="nextPage()"><img src="../icons/arrow-right.svg"></button>
+
+            <button class="arrow-button" onclick="nextPage()">
+                <img src="../icons/arrow-right.svg">
+            </button>
         </div>
     </div>
 

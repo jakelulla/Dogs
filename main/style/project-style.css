@@ -6,17 +6,20 @@
 :root {
     --primary: #000;
     --secondary: #fff;
+    --tertiary: #666;
 
     color: var(--secondary);
-    font-family: 'Conthrax', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 * {
     color: var(--secondary);
+    font-family: 'Conthrax', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
 body {
     background-color: var(--primary);
+    margin: 0;
 }
 
 /* Generic Classes */
@@ -28,46 +31,51 @@ body {
     justify-content: space-between;
 }
 
-.flex-column{
+.flex-column {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
 
-
-
 /* Specific Classes */
 
 #sidebar-nav {
-    position: absolute; 
-    right: 0; 
+    position: fixed;
+    right: -150px;
     width: 150px;
     height: 100%;
     background-color: var(--tertiary);
-    z-index:  10;
+    z-index: 10;
+
+    transition: all ease-in-out 250ms;
 }
 
-#sidebar-nav>button{
-    margin-left: 125px;
+#sidebar-nav>button {
+    margin-left: 120px;
     margin-top: 10px;
     width: 25px;
     height: 25px;
     padding: 0;
+
     background: none;
     border: none;
 }
 
-#sidebar-nav>button:hover{
+#sidebar-nav>button:hover {
     cursor: pointer;
 }
 
-#sidebar-nav div button{
-    border: 2px solid;
+#sidebar-nav div button {
+    border: 2px solid black;
     background: none;
+    margin: 10px 0 10px 0;
 }
 
-#sidebar-nav div 
+#sidebar-nav div button:hover {
+    cursor: pointer
+}
+
 .page-num {
     position: fixed;
     bottom: 0px;
@@ -143,4 +151,20 @@ body {
 
 .hidden {
     display: none;
+}
+
+.sidebar-hidden{
+    animation: from-right 500ms ease-in-out;
+    animation-direction: reverse
+
+}
+
+/*ANIMATIONS */
+@keyframes from-right{
+    from {
+        right: -150px;
+    }
+    to {
+        right: 0px;
+    }
 }
