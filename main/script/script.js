@@ -31,7 +31,8 @@ function prevPage() {
 }
 
 function toggleNav() {
-    let navbar = document.getElementById('sidebar-nav');
-    navbar.classList.toggle('sidebar-shown');
+    var sidebar = document.getElementById('sidebar-nav');
+    sidebar.classList.toggle('hidden');
 }
+
 
