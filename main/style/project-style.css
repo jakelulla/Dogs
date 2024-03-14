@@ -87,9 +87,9 @@ body {
     margin: 5px;
 }
 
-/* #navbar {
+#navbar {
 
-} */
+}
 
 #navbar .left-nav-container {
     font-size: 12px;
@@ -122,8 +122,8 @@ body {
     cursor: pointer;
 }
 
-/* .arrow-button:hover img {
-} */
+.arrow-button:hover img {
+}
 
 .arrow-button img {
     width: 40px;
@@ -156,7 +156,6 @@ body {
 .sidebar-hidden{
     animation: from-right 500ms ease-in-out;
     animation-direction: reverse
-
 }
 
 /*ANIMATIONS */
@@ -165,6 +164,6 @@ body {
         right: -150px;
     }
     to {
-        right: 0px;
+        right: 10px;
     }
 }

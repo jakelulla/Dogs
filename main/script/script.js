@@ -17,6 +17,10 @@ function nextPage() {
     currentPage++;
     
     pages[currentPage].classList.toggle('hidden');
+
+    currPage = document.getElementById('current-page');
+    currPageNum = parseInt(currPage.innerHTML) + 1;
+    currPage.innerHTML = currPageNum;
 }
 
 function prevPage() {
@@ -28,11 +32,16 @@ function prevPage() {
     currentPage--;
     
     pages[currentPage].classList.toggle('hidden');
+
+    let currPage = document.getElementById('current-page');
+    let currPageNum = parseInt(currPage.innerHTML) - 1;
+    currPage.innerHTML = currPageNum;
 }
 
 function toggleNav() {
-    var sidebar = document.getElementById('sidebar-nav');
+    let sidebar = document.getElementById('sidebar-nav');
     sidebar.classList.toggle('hidden');
+    console.log("button clicked");
 }
 
 
