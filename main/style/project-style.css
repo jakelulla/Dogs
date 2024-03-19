@@ -42,13 +42,10 @@ body {
 
 #sidebar-nav {
     position: fixed;
-    /* right: -150px; */
     width: 150px;
     height: 100%;
     background-color: var(--tertiary);
     z-index: 10;
-
-    transition: all ease-in-out 250ms;
 }
 
 #sidebar-nav>button {
@@ -138,14 +135,25 @@ body {
     width: 65%;
 }
 
-.displays {
-    flex-direction: column;
-  }
+.visuals {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+ }
 
-  .image img{
-    width: 240px;
-    height: auto;
-  }
+ .visuals img{
+    height: 150px;
+    width: auto;
+ }
+
+
+ #heading{
+    margin: auto;
+ }
 
 /* IMPORTANT CLASSES */
 
@@ -156,14 +164,4 @@ body {
 .sidebar-hidden{
     animation: from-right 500ms ease-in-out;
     animation-direction: reverse
-} 
-
-/*ANIMATIONS */
-@keyframes from-right{
-    from {
-        right: -150px;
-    }
-    to {
-        right: 10px;
-    }
 } 
