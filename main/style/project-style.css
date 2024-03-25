@@ -42,6 +42,7 @@ body {
 
 #sidebar-nav {
     position: fixed;
+    margin-left: 1290px;
     width: 150px;
     height: 100%;
     background-color: var(--tertiary);
@@ -154,6 +155,26 @@ body {
  #heading{
     margin: auto;
  }
+
+ #description h3{
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+#puppyImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#arduinoButton {
+    background-color: red;
+}
+
+#arduinoButton:hover {
+    cursor: pointer
+}
 
 /* IMPORTANT CLASSES */
 

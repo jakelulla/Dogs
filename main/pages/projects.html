@@ -11,16 +11,16 @@
     <div id = "sidebar-nav" class = "hidden">
         <button id="sidebar-nav-close" onclick="toggleNav()"><img src="../icons/close.svg"></button>
         <div class="flex-column">
+            <a href="../index.html"><button>Home Page</button></a>
             <a href="./about.html"><button>About Me</button></a>
-            <a href="./projects.html"><button>My Projects</button></a>
-            <a href="./contact.html"><button>Contact Me</button></a>
+            <a href="./arduino.html"><button>Arduino Project</button></a>
         </div>
     </div>
 
     <div class="flex-row" id="navbar">
         <div class="left-nav-container flex-row">
             <a href="../index.html">
-                <img src="../img/templateImage.jpeg">
+                <img src="../img/icon.png">
             </a>
             <p>jakelulla@gmail.com  |  (201) 669-8846</p>
         </div>
@@ -30,9 +30,11 @@
     </div>
 
     <div class="header-container flex-row">
-        <h1>
-            Projects
-        </h1>
+        <marquee>
+            <h1>
+                Projects
+            </h1>
+        </marquee>
         <div class="page-nav flex-row">
             <button class="arrow-button" onclick="prevPage()">
                 <img src="../icons/arrow-left.svg">
@@ -53,7 +55,7 @@
             </p>
 
             <h3 class="project-title">
-                <a href="./arduino.html"><button>Simon Says</button></a>
+                <a href="./arduino.html"><button id = "arduinoButton">Simon Says</button></a>
             </h3>
 
             <p class="description">

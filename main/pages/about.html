@@ -11,16 +11,16 @@
     <div id = "sidebar-nav" class = "hidden">
         <button id="sidebar-nav-close" onclick="toggleNav()"><img src="../icons/close.svg"></button>
         <div class="flex-column">
-            <a href="./about.html"><button>About Me</button></a>
+            <a href="../index.html"><button>Home Page</button></a>
             <a href="./projects.html"><button>My Projects</button></a>
-            <a href="./contact.html"><button>Contact Me</button></a>
+            <a href="./arduino.html"><button>Arduino Project</button></a>
         </div>
     </div>
 
     <div class="flex-row" id="navbar">
         <div class="left-nav-container flex-row">
             <a href="../index.html">
-                <img src="../img/templateImage.jpeg">
+                <img src="../img/icon.png">
             </a>
             <p>jakelulla@gmail.com  |  (201) 669-8846</p>
         </div>
@@ -30,158 +30,25 @@
     </div>
 
     <div class="header-container flex-row">
-        <h1>
-            Projects
-        </h1>
-        <div class="page-nav flex-row">
-            <button class="arrow-button" onclick="prevPage()">
-                <img src="../icons/arrow-left.svg">
-            </button>
-
-            <p><span id = "current-page">1</span id = "totalPages">/<span>3</span></p>
-
-            <button class="arrow-button" onclick="nextPage()">
-                <img src="../icons/arrow-right.svg">
-            </button>
-        </div>
+        <marquee><h1>HERE IS A PAGE A LITTLE BIT ABOUT ME<h1></marquee>
     </div>
 
-    <div class="page" id="page-0">
-        <div class="section-1 flex-row">
-            <p class="year-range">
-                2024
-            </p>
+    <hr>
 
-            <h3 class="project-title">
-                <a href="./arduino.html"><button>Simon Says</button></a>
-            </h3>
-
-            <p class="description">
-                Used LEDs, push buttons, and resistors to create a "Simon Says" game controlled by an arduino microcontroller.
-            </p>
-        </div>
-        <hr>
-        <div class="section-2 flex-row">
-            <p class="year-range">
-                2023
-            </p>
-
-            <h3 class="project-title">
-                Unity Game Development 
-            </h3>
-
-            <p class="description">
-                Completed a 40-hour course covering game development using Unity. Also completed
-                various projects in Unity outside of the course. All projects programmed using C#.
-            </p>
-        </div>
-        <hr>
-        <div class="section-3 flex-row">
-            <p class="year-range">
-                2020-2024
-            </p>
-
-            <h3 class="project-title">
-                Arcade Games
-            </h3>
-
-            <p class="description">
-                Brought a new life to games such as Pacman, Flappy-Bird, the google t-rex game, the
-                snake game, and pong by redesigning them in Python and Java.
-            </p>
-        </div>
+    <div id = "description">
+        <h3>
+            I am currently a senior at Pascack Hills High School. As of right now, I am probably going to attend the University of Illinois at Urbana-Champaign in the fall to study computer engineering, however that could potentially change... probably not though. 
+        </h3>
+        <h3>
+            Other than that some more information about me is that I am a great skiier and baseball player. I also enjoy playing the piano. 
+        </h3>
+        <h3>
+            Lastly, here is a picture of a cute puppy to fill up the rest of the page: 
+        </h3>
+        <img id = "puppyImage" src = "/main/img/puppy.jpeg">
     </div>
-    <div class="page hidden" id="page-1">
-        <div class="section-1 flex-row">
-            <p class="year-range">
-                2024
-            </p>
-
-            <h3 class="project-title">
-                Project Lebron
-            </h3>
-
-            <p class="description">
-                Determine whether or not an image is famous basketball player Lebron James. Uses a reference image and returns a number representing how similar the two images are (smaller number = more similar). Ranged <50 if image was LeBron and 100+ if not.
-            </p>
-        </div>
-        <hr>
-        <div class="section-2 flex-row">
-            <p class="year-range">
-                2023
-            </p>
-
-            <h3 class="project-title">
-                Aerial Drone
-            </h3>
-
-            <p class="description">
-                Team project that flew a drone to a specified height and then dropped a package. My role was to manage coding and wire the Arduino to the controllers using a breadboard.
-                Other teammates built the drone skeleton and assembly needed to carry the package.
-             </p>
-        </div>
-        <hr>
-        <div class="section-3 flex-row">
-            <p class="year-range">
-                2024
-            </p>
-
-            <h3 class="project-title">
-                Fitness App
-            </h3>
-
-            <p class="description">
-                Developed fitness app for IOS in React Native. Allows user to log workouts, food, water, sleep, etc. 
-            </p>
-        </div>
-    </div>
-    <div class="page hidden" id="page-2">
-        <div class="section-1 flex-row">
-            <p class="year-range">
-                2023
-            </p>
-
-            <h3 class="project-title">
-                Graduation Tracker
-            </h3>
-
-            <p class="description">
-                Designed a program for the high school using Java to analyze large amounts of data and
-                display which students are on track to graduate based on their past courses.
-            </p>
-        </div>
-        <hr>
-        <div class="section-2 flex-row">
-            <p class="year-range">
-                2023
-            </p>
-
-            <h3 class="project-title">
-                Preschool Learning Game
-            </h3>
-
-            <p class="description">
-                An educational game using Java for a class of 20 children. The program helped students learn to count in French as well as develop their hand-eye coordination.
-            </p>
-        </div>
-        <hr>
-        <div class="section-3 flex-row">
-            <p class="year-range">
-                2022
-            </p>
-
-            <h3 class="project-title">
-                Robot Claw
-            </h3>
-
-            <p class="description">
-                Designed a robotic arm that used water, tubes, and syringes to grip and move various lighter items.           
-             </p>
-        </div>
-    </div>
-
     <div class="page-num">
-        <p>Projects</p>
+        <p>ABOUT ME</p>
     </div>
 
     
