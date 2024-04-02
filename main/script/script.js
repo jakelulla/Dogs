@@ -2,7 +2,7 @@ let pageCount = 3;
 let currentPage = 0;
 let pages;
 
-initializePages();
+initializePages(); 
 
 function initializePages() {
     pages = document.getElementsByClassName('page');
