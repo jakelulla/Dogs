@@ -4,9 +4,9 @@
 }
 
 :root {
-    --primary: #000;
-    --secondary: #fff;
-    --tertiary: #666;
+    --primary: #1784cdd4;
+    --secondary: #060404;
+    --tertiary: #1d7382;
 
     color: var(--secondary);
 }
@@ -120,7 +120,8 @@ body {
 }
 
 .page {
-    margin: 0 50px 0 100px;
+    margin: 0 50px; 
+    padding: 0 20px; 
 }
 
 .page .year-range {
@@ -132,13 +133,22 @@ body {
     font-size: 24px;
 }
 
-.page .description {
-    width: 65%;
+
+.page .description h3 {
+    width: 20%;
+    margin: 0 20px; 
 }
+
+
+.description{
+    margin-left: 50px;
+}
+
+
 
 .visuals {
     margin: auto;
-    width: 50%;
+    width: 20%; 
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -156,10 +166,6 @@ body {
     margin: auto;
  }
 
- #description h3{
-    margin-left: 20px;
-    margin-top: 50px;
-}
 
 #puppyImage {
     display: block;
@@ -168,13 +174,89 @@ body {
     width: 50%;
 }
 
-#arduinoButton {
-    background-color: red;
+.projectTile {
+    background-color: rgba(29, 67, 184, 0.132);
+    border-color: rgb(0, 0, 0);
 }
 
 #arduinoButton:hover {
     cursor: pointer
 }
+
+
+.code{
+    margin: auto;
+    width: calc(50% - 40px); /* Adjust width to accommodate padding */
+    border: 3px solid rgb(10, 0, 0);
+    padding: 10px;
+}
+
+.code p{
+    margin-left: auto;
+}
+
+.code pre code{
+    margin-left: auto;
+}
+
+
+
+/* Generic Classes */
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: space-between;
+}
+
+/* Specific Classes */
+
+.page .year-range {
+    width: 15%;
+    margin-right: 20px; 
+}
+
+.page .project-title {
+    width: 20%;
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+.page .description {
+    width: 65%;
+}
+
+.description {
+    margin-left: 0; 
+    margin-top: 0; 
+    margin-bottom: 0; 
+}
+
+.page .intro {
+    width: 65%;
+}
+
+.intro {
+    margin-left: 0; 
+    margin-top: 0; 
+    margin-bottom: 0; 
+}
+
+.projectTile {
+    background-color: rgba(29, 67, 184, 0.132);
+    border-color: rgb(0, 0, 0);
+    width: 100%; 
+}
+
+
 
 /* IMPORTANT CLASSES */
 
@@ -186,3 +268,5 @@ body {
     animation: from-right 500ms ease-in-out;
     animation-direction: reverse
 } 
+
+
