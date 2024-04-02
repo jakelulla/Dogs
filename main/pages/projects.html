@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project</title>
+    <title>Projects</title>
     <link rel="stylesheet" href="../style/project-style.css">
-    <script src="../script/script.js"></script>
+    <script src="../script/script.js" defer></script>
 </head>
 <body>
     <div id = "sidebar-nav" class = "hidden">
@@ -30,7 +30,7 @@
     </div>
 
     <div class="header-container flex-row">
-        <marquee>
+        <marquee scrollamount = "15">
             <h1>
                 Projects
             </h1>
@@ -47,40 +47,41 @@
             </button>
         </div>
     </div>
-
+    <hr>
     <div class="page" id="page-0">
         <div class="section-1 flex-row">
             <p class="year-range">
-                2024
+                2023-24
             </p>
 
             <h3 class="project-title">
-                <a href="./arduino.html"><button id = "arduinoButton">Simon Says</button></a>
+                <a href = "arduino.html">
+                    ARDUINO PROJECT
+                </a>
             </h3>
 
             <p class="description">
-                Used LEDs, push buttons, and resistors to create a "Simon Says" game controlled by an arduino microcontroller.
+                Simon Says arduino project. Full description if you click link attached to title.
             </p>
         </div>
         <hr>
         <div class="section-2 flex-row">
             <p class="year-range">
-                2023
+                2022-23
             </p>
 
             <h3 class="project-title">
-                Unity Game Development 
+                Unity Games 
             </h3>
 
             <p class="description">
-                Completed a 40-hour course covering game development using Unity. Also completed
-                various projects in Unity outside of the course. All projects programmed using C#.
+                Took 40 hour course working with Unity Game Development and also completed various side projects. All project programmed in C# using visual studio.
             </p>
         </div>
         <hr>
         <div class="section-3 flex-row">
             <p class="year-range">
-                2020-2024
+                2020-23
             </p>
 
             <h3 class="project-title">
@@ -88,8 +89,7 @@
             </h3>
 
             <p class="description">
-                Brought a new life to games such as Pacman, Flappy-Bird, the google t-rex game, the
-                snake game, and pong by redesigning them in Python and Java.
+                Simulations of various classic arcade games (pacman, pong...) in Java.
             </p>
         </div>
     </div>
@@ -100,40 +100,39 @@
             </p>
 
             <h3 class="project-title">
-                Project Lebron
+                Fitness App
             </h3>
 
             <p class="description">
-                Determine whether or not an image is famous basketball player Lebron James. Uses a reference image and returns a number representing how similar the two images are (smaller number = more similar). Ranged <50 if image was LeBron and 100+ if not.
+                Developed fitness app in React Native. Designed for IOS (simulated through Xcode) and included workout log, food tracker, sleep log...
             </p>
         </div>
         <hr>
         <div class="section-2 flex-row">
             <p class="year-range">
-                2023
-            </p>
-
-            <h3 class="project-title">
-                Aerial Drone
-            </h3>
-
-            <p class="description">
-                Team project that flew a drone to a specified height and then dropped a package. My role was to manage coding and wire the Arduino to the controllers using a breadboard.
-                Other teammates built the drone skeleton and assembly needed to carry the package.
-             </p>
-        </div>
-        <hr>
-        <div class="section-3 flex-row">
-            <p class="year-range">
                 2024
             </p>
 
             <h3 class="project-title">
-                Fitness App
+                Project LeBron
             </h3>
 
             <p class="description">
-                Developed fitness app for IOS in React Native. Allows user to log workouts, food, water, sleep, etc. 
+                Algorithm to analyze an image and determine whether or not the image is LeBron James. 
+            </p>
+        </div>
+        <hr>
+        <div class="section-3 flex-row">
+            <p class="year-range">
+                2023
+            </p>
+
+            <h3 class="project-title">
+                Graduation Tracker
+            </h3>
+
+            <p class="description">
+                Class project to analyze student data and return which graduation requirements are missing. 
             </p>
         </div>
     </div>
@@ -144,48 +143,36 @@
             </p>
 
             <h3 class="project-title">
-                Graduation Tracker
+                Spelling Bee 
             </h3>
 
             <p class="description">
-                Designed a program for the high school using Java to analyze large amounts of data and
-                display which students are on track to graduate based on their past courses.
+                Takes in letters and center letter to return all words unscrambled (for NY Times).
             </p>
         </div>
         <hr>
         <div class="section-2 flex-row">
             <p class="year-range">
-                2023
-            </p>
-
-            <h3 class="project-title">
-                Preschool Learning Game
-            </h3>
-
-            <p class="description">
-                An educational game using Java for a class of 20 children. The program helped students learn to count in French as well as develop their hand-eye coordination.
-            </p>
-        </div>
-        <hr>
-        <div class="section-3 flex-row">
-            <p class="year-range">
                 2022
             </p>
 
             <h3 class="project-title">
-                Robot Claw
+                Aerial Drone
             </h3>
 
             <p class="description">
-                Designed a robotic arm that used water, tubes, and syringes to grip and move various lighter items.           
-             </p>
+                Developed code in C-based language (arduino) to manage descent of package dropped by drone.
+            </p>
+        </div>
+        <hr>
+        <div class="section-3 flex-row">
+       
+
         </div>
     </div>
 
     <div class="page-num">
         <p>Projects</p>
     </div>
-
-    
 </body>
 </html>
