@@ -147,7 +147,7 @@ body {
 
 
 .visuals {
-    margin: auto;
+    margin-left: 500px;
     width: 20%; 
     padding: 10px;
     display: flex;
